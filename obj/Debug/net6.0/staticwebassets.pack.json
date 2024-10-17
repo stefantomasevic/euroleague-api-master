@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\02acaaeb-605e-40fb-b81f-62dac991818f_Olimpia-Milano.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\02acaaeb-605e-40fb-b81f-62dac991818f_Olimpia-Milano.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\0d5ae3b0-d596-4367-b9f7-3dbb2d340ce7_Barselona.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\0d5ae3b0-d596-4367-b9f7-3dbb2d340ce7_Barselona.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\226b03ea-a971-400a-aaae-be33b8706b17_Barselona.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\226b03ea-a971-400a-aaae-be33b8706b17_Barselona.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\37d09324-482d-49a7-b96b-025986fd8e56_panatanaikos.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\37d09324-482d-49a7-b96b-025986fd8e56_panatanaikos.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\6549809b-3490-4a61-9691-84909682274b_KKPartizan.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\6549809b-3490-4a61-9691-84909682274b_KKPartizan.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\6e5befa9-ccbc-4999-9fb4-3986f0fbceb4_crvena_zvezda.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\6e5befa9-ccbc-4999-9fb4-3986f0fbceb4_crvena_zvezda.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\86ffe96e-17ba-4e1e-8c40-e0abcde7b55a_download (2).png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\86ffe96e-17ba-4e1e-8c40-e0abcde7b55a_download (2).png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\8bd404d4-070e-4015-be2f-3bae77f272b0_Olimpia-Milano.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\8bd404d4-070e-4015-be2f-3bae77f272b0_Olimpia-Milano.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\KKPartizan.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\KKPartizan.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\cac6d952-bf75-427c-9e54-b6a5373fd78d_valencia.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\cac6d952-bf75-427c-9e54-b6a5373fd78d_valencia.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\e1467bdf-055f-4950-a637-2ee7200f0ae9_LOGO.manji-beli.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\e1467bdf-055f-4950-a637-2ee7200f0ae9_LOGO.manji-beli.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\faec4d9b-cf38-4652-b008-2a0e991cd974_crvena_zvezda.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\faec4d9b-cf38-4652-b008-2a0e991cd974_crvena_zvezda.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\free.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\free.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\real_madrid_logo.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\real_madrid_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\40785f23-636a-447c-aade-1edd8ca1f2c5_download (2).png",
+      "PackagePath": "staticwebassets\\Images\\Players\\40785f23-636a-447c-aade-1edd8ca1f2c5_download (2).png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\alen.png",
+      "PackagePath": "staticwebassets\\Images\\Players\\alen.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\nandodecolo.png",
+      "PackagePath": "staticwebassets\\Images\\Players\\nandodecolo.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\sergiorodrigues.png",
+      "PackagePath": "staticwebassets\\Images\\Players\\sergiorodrigues.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Euroleague.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Euroleague.props",
+      "PackagePath": "build\\Euroleague.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Euroleague.props",
+      "PackagePath": "buildMultiTargeting\\Euroleague.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Euroleague.props",
+      "PackagePath": "buildTransitive\\Euroleague.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
