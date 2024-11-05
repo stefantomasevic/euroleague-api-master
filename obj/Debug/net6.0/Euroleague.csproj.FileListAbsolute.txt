@@ -592,3 +592,4 @@ C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\n
 C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\net6.0\Euroleague.pdb
 C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\net6.0\Euroleague.genruntimeconfig.cache
 C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\net6.0\ref\Euroleague.dll
+C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\net6.0\Euroleague.sourcelink.json

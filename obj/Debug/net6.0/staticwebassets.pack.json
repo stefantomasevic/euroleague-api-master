@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Images\\Logos\\KKPartizan.png"
     },
     {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\c572601d-e868-453e-8266-1bc7cff47b8d_fenerbahce.png",
+      "PackagePath": "staticwebassets\\Images\\Logos\\c572601d-e868-453e-8266-1bc7cff47b8d_fenerbahce.png"
+    },
+    {
       "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\cac6d952-bf75-427c-9e54-b6a5373fd78d_valencia.png",
       "PackagePath": "staticwebassets\\Images\\Logos\\cac6d952-bf75-427c-9e54-b6a5373fd78d_valencia.png"
     },
@@ -61,12 +65,28 @@
       "PackagePath": "staticwebassets\\Images\\Logos\\real_madrid_logo.png"
     },
     {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\1f24ced4-ba8e-40c6-9ce4-f019a5d06ca7_download-_1_ (1).png",
+      "PackagePath": "staticwebassets\\Images\\Players\\1f24ced4-ba8e-40c6-9ce4-f019a5d06ca7_download-_1_ (1).png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\239e5357-56a7-4bda-97b9-10aa0c4d96c9_download-_1_ (1).png",
+      "PackagePath": "staticwebassets\\Images\\Players\\239e5357-56a7-4bda-97b9-10aa0c4d96c9_download-_1_ (1).png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\300bfbd4-c102-4897-8ceb-4199e693dbe4_download (2).png",
+      "PackagePath": "staticwebassets\\Images\\Players\\300bfbd4-c102-4897-8ceb-4199e693dbe4_download (2).png"
+    },
+    {
       "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\40785f23-636a-447c-aade-1edd8ca1f2c5_download (2).png",
       "PackagePath": "staticwebassets\\Images\\Players\\40785f23-636a-447c-aade-1edd8ca1f2c5_download (2).png"
     },
     {
       "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\alen.png",
       "PackagePath": "staticwebassets\\Images\\Players\\alen.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\f80f8c4f-46b3-45c0-983b-5af5c49a1ed4_download-_1_ (1).png",
+      "PackagePath": "staticwebassets\\Images\\Players\\f80f8c4f-46b3-45c0-983b-5af5c49a1ed4_download-_1_ (1).png"
     },
     {
       "Id": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Players\\nandodecolo.png",

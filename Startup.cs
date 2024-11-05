@@ -37,6 +37,7 @@ namespace Euroleague
 
             services.AddScoped<ITeamRepository, SqlTeamRepository>();
             services.AddScoped<IPlayerRepository, SqlPlayerRepository>();
+            services.AddScoped<IScheduleRepository, SqlScheduleRepository>();
 
             services.AddAutoMapper(typeof(AutoMapperprofile));
 

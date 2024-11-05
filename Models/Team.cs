@@ -23,7 +23,9 @@ namespace Euroleague.Models
 
         public ICollection<Player> Players { get; set; }
 
-  
+        public ICollection<Schedule> HomeSchedules { get; set; }
+        public ICollection<Schedule> GuestSchedules { get; set; }
+
 
 
     }

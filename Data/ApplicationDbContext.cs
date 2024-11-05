@@ -33,10 +33,23 @@ namespace Euroleague.Data
             .HasForeignKey(p => p.TeamId)
             .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<Schedule>()
+                 .HasOne(s => s.HomeTeam)
+                 .WithMany(t => t.HomeSchedules)
+                 .HasForeignKey(s => s.HomeId)
+                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Schedule>()
+                .HasOne(s => s.GuestTeam)
+                .WithMany(t => t.GuestSchedules)
+                .HasForeignKey(s => s.GuestId)
+                .OnDelete(DeleteBehavior.Restrict);
+
         }
 
         public DbSet<Player> Players { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<Schedule> Schedule { get; set; }
 
     }
 }
