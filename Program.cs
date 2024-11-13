@@ -29,6 +29,8 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
+app.UseCors("AllowSpecificOrigin");
+
 app.UseSwagger();
 
 startup.Configure(app, builder.Environment);
