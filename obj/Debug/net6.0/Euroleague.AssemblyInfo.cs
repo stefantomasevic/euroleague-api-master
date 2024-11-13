@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Euroleague")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55cf12673c1743471f7feecd34a4a12d409dc65e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a33b7fe15456fd01f92c62792a973f09d7cac2df")]
 [assembly: System.Reflection.AssemblyProductAttribute("Euroleague")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Euroleague")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
