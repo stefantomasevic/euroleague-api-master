@@ -5,6 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(80); 
+});
+
+
 var startup = new Startup(builder.Configuration);
 startup.ConfigureServices(builder.Services);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
