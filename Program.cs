@@ -22,7 +22,7 @@ app.UseSwagger();
 startup.Configure(app, builder.Environment);
 
 
-    
+app.MapControllers();
 
 
 
