@@ -12,11 +12,13 @@ namespace Euroleague.Repository
 
         private readonly ApplicationDbContext _context;
         private readonly IMapper _mapper;
+        private readonly IWebHostEnvironment _env;
 
-        public SqlTeamRepository(ApplicationDbContext context, IMapper mapper)
+        public SqlTeamRepository(ApplicationDbContext context, IMapper mapper, IWebHostEnvironment env)
         {
             _context = context;
             _mapper = mapper;
+            _env = env;
         }
         public async Task<Team> CreateTeam(TeamManipulationDTO teamManDTO)
         {
@@ -117,7 +119,17 @@ namespace Euroleague.Repository
             var uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
 
             // path for picture
-            var filePath = Path.Combine("wwwroot", "images", "logos", uniqueFileName);
+            // Putanja do foldera za slike
+            var imagesPath = Path.Combine(_env.WebRootPath, "images", "logos");
+
+            // Provera da li folder postoji, ako ne, kreiraj ga
+            if (!Directory.Exists(imagesPath))
+            {
+                Directory.CreateDirectory(imagesPath);
+            }
+
+            // Putanja do fajla
+            var filePath = Path.Combine(imagesPath, uniqueFileName);
 
             // save picture on server
             using (var fileStream = new FileStream(filePath, FileMode.Create))

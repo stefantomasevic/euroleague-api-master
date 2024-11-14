@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VvlLK1LCeKZ8oIg4wV1bPj39jzyBvMfiTRaAuVefcvM=",
+  "Hash": "1ny6ZXkaYvInGEebH+Ocgj1SRz/am+vtVHWjS3jQq9k=",
   "Source": "Euroleague",
   "BasePath": "_content/Euroleague",
   "Mode": "Default",
@@ -169,6 +169,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\Logos\\8bd404d4-070e-4015-be2f-3bae77f272b0_Olimpia-Milano.png"
     },
     {
+      "Identity": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\b6839821-bf03-4d9d-9dd2-ff7ec217ba85_ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png",
+      "SourceId": "Euroleague",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\",
+      "BasePath": "_content/Euroleague",
+      "RelativePath": "Images/Logos/b6839821-bf03-4d9d-9dd2-ff7ec217ba85_ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Logos\\b6839821-bf03-4d9d-9dd2-ff7ec217ba85_ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png"
+    },
+    {
       "Identity": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\c572601d-e868-453e-8266-1bc7cff47b8d_fenerbahce.png",
       "SourceId": "Euroleague",
       "SourceType": "Discovered",
@@ -224,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Logos\\e1467bdf-055f-4950-a637-2ee7200f0ae9_LOGO.manji-beli.png"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\e9e477bb-5afa-4540-b31a-3dd443014dd7_logo_mpcair.ico",
+      "SourceId": "Euroleague",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\",
+      "BasePath": "_content/Euroleague",
+      "RelativePath": "Images/Logos/e9e477bb-5afa-4540-b31a-3dd443014dd7_logo_mpcair.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Logos\\e9e477bb-5afa-4540-b31a-3dd443014dd7_logo_mpcair.ico"
     },
     {
       "Identity": "C:\\Users\\admin\\Downloads\\euroleague-api-master\\euroleague-api-master\\wwwroot\\Images\\Logos\\ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png",
