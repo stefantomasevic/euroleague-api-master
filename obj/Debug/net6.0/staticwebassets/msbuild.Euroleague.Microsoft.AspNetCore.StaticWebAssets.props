@@ -128,6 +128,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Logos\8bd404d4-070e-4015-be2f-3bae77f272b0_Olimpia-Milano.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Logos\a3ece6fd-b570-4488-a6ea-24ca7344a941_ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Euroleague</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Euroleague</BasePath>
+      <RelativePath>Images/Logos/a3ece6fd-b570-4488-a6ea-24ca7344a941_ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Logos\a3ece6fd-b570-4488-a6ea-24ca7344a941_ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Logos\b6839821-bf03-4d9d-9dd2-ff7ec217ba85_ec9d31a7-9d7b-40dd-9bdd-8b6e67d7d8b1_fenerbahce.png))">
       <SourceType>Package</SourceType>
       <SourceId>Euroleague</SourceId>
