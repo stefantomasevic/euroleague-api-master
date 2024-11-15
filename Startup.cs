@@ -2,6 +2,7 @@
 using Euroleague.Mappings;
 using Euroleague.Repository;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 namespace Euroleague
 {
@@ -21,17 +22,30 @@ namespace Euroleague
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 {
-                    builder.WithOrigins("http://localhost:4200")
+                    builder.WithOrigins("http://localhost:4200", "https://euroleague.onrender.com")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials();
                 });
             });
 
+            // konekcioni
+            ExeConfigurationFileMap configFileMap = new ExeConfigurationFileMap
+            {
+                ExeConfigFilename = "Settings.config"
+            };
+            Configuration config = System.Configuration.ConfigurationManager.OpenMappedExeConfiguration(configFileMap, ConfigurationUserLevel.None);
+
+            string localConnection = config.AppSettings.Settings["Database:Local"]?.Value;
+            string liveConnection = config.AppSettings.Settings["Database:Live"]?.Value;
+
+            string connectionString = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development"
+                ? localConnection
+                : liveConnection;
 
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging()
+                options.UseSqlServer(connectionString).EnableSensitiveDataLogging()
            .LogTo(Console.WriteLine, LogLevel.Information); 
             });
 

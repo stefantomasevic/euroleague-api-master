@@ -10,16 +10,16 @@ builder.WebHost.ConfigureKestrel(options =>
     options.ListenAnyIP(80); 
 });
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowSpecificOrigin", policy =>
-    {
-        policy.WithOrigins("https://euroleague.onrender.com") // Vaša frontend adresa
-              .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials();
-    });
-});
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowSpecificOrigin", policy =>
+//    {
+//        policy.WithOrigins("https://euroleague.onrender.com", "https://euroleague.onrender.com")
+//              .AllowAnyHeader()
+//              .AllowAnyMethod()
+//              .AllowCredentials();
+//    });
+//});
 
 
 
@@ -29,7 +29,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
-app.UseCors("AllowSpecificOrigin");
+//app.UseCors("AllowSpecificOrigin");
 
 app.UseSwagger();
 
