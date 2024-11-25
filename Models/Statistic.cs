@@ -9,5 +9,8 @@
         public int Points { get; set; }
         public int Asists { get; set; }
         public int Fouls { get; set; }
+
+        public Player Player { get; set; }
+        public Schedule Schedule { get; set; }
     }
 }

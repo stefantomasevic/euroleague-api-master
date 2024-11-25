@@ -26,6 +26,8 @@ namespace Euroleague.Models
 
         public Team Team { get; set; }
 
+        public ICollection<Statistic> Statistics { get; set; }
+
 
 
 

@@ -15,5 +15,7 @@
             public DateTime GameTime { get; set; }
             public int? HomeScore { get; set; } 
             public int? GuestScore { get; set; }
-        }
+
+        public ICollection<Statistic> Statistics { get; set; }
+    }
     }
