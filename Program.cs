@@ -50,8 +50,7 @@ app.UseSwagger();
 
 startup.Configure(app, builder.Environment);
 
-app.UseAuthentication();
-app.UseAuthorization();
+
 
 app.MapControllers();
 

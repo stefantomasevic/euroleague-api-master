@@ -3,6 +3,7 @@ using Euroleague.Data;
 using Euroleague.DTO;
 using Euroleague.Models;
 using Euroleague.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +11,7 @@ namespace Euroleague.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class ScheduleController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

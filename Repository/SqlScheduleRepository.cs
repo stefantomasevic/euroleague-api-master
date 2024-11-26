@@ -17,10 +17,30 @@ namespace Euroleague.Repository
             _context = context;
             _mapper = mapper;
         }
+        //public async Task<Schedule> CreateSchedule(CreateScheduleDto createScheduleDto)
+        //{
+
+
+        //    var schedule = new Schedule
+        //    {
+        //        HomeId = createScheduleDto.HomeTeamId,
+        //        GuestId = createScheduleDto.GuestTeamId,
+        //        GameTime = createScheduleDto.GameTime,
+        //        HomeScore = 0,
+        //        GuestScore = 0,
+        //    };
+
+
+
+        //    _context.Schedule.Add(schedule);
+
+        //    await _context.SaveChangesAsync();
+
+        //    return schedule;
+        //}
         public async Task<Schedule> CreateSchedule(CreateScheduleDto createScheduleDto)
         {
-
-
+            // Create the schedule
             var schedule = new Schedule
             {
                 HomeId = createScheduleDto.HomeTeamId,
@@ -30,13 +50,43 @@ namespace Euroleague.Repository
                 GuestScore = 0,
             };
 
-
-
             _context.Schedule.Add(schedule);
+            await _context.SaveChangesAsync();  // Save schedule first to get the schedule ID
 
+            // Get the list of players for both teams (assuming these are already available)
+            var homeTeamPlayers = await _context.Players.Where(p => p.TeamId == createScheduleDto.HomeTeamId).ToListAsync();
+            var guestTeamPlayers = await _context.Players.Where(p => p.TeamId == createScheduleDto.GuestTeamId).ToListAsync();
+
+            // Create statistics for home team players
+            var homeTeamStatistics = homeTeamPlayers.Select(player => new Statistic
+            {
+                PlayerId = player.Id,
+                ScheduleId = schedule.Id,
+                Points = 0,
+                Asists = 0,
+                Rebounds = 0,
+                Fouls = 0
+            }).ToList();
+
+            // Create statistics for guest team players
+            var guestTeamStatistics = guestTeamPlayers.Select(player => new Statistic
+            {
+                PlayerId = player.Id,
+                ScheduleId = schedule.Id,
+                Points = 0,
+                Asists = 0,
+                Rebounds = 0,
+                Fouls = 0
+            }).ToList();
+
+            // Add statistics to the context
+            _context.Statistic.AddRange(homeTeamStatistics);
+            _context.Statistic.AddRange(guestTeamStatistics);
+
+            // Save changes to insert the statistics
             await _context.SaveChangesAsync();
 
-            return schedule;
+            return schedule; // Return the created schedule
         }
 
         public async Task<IEnumerable<ScheduleDto>> GetScheduleByDate(DateTime date)
