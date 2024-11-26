@@ -29,7 +29,7 @@ namespace Euroleague.Controllers
         [HttpPost("signin")]
         public async Task<IActionResult> SignIn([FromBody] SignInRequest model)
         {
-            var user = await _authorizeService.SignIn(model.Username, model.Password);
+            var user = await _authorizeService.SignIn(model.Username, model.Password, model.Email);
             var token = await _authorizeService.GenerateToken(user);
             return Ok(new { Token = token });
         }

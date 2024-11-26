@@ -52,18 +52,30 @@ namespace Euroleague.Repository
             return user;
         }
 
-        public async Task<User> SignIn(string username, string password)
+        public async Task<User> SignIn(string username, string password, string email)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+            var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
 
-            if (user == null)
-                throw new Exception("Invalid username or password");
+            if (existingUser != null)
+                throw new Exception("Username already exists");  // If the user already exists, throw an error
 
-            // Proveravamo da li lozinka odgovara hashovanom passwordu
-            if (!BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
-                throw new Exception("Invalid username or password");
+            // Hash the password before saving it
+            var passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
 
-            return user;
+            // Create a new user object
+            var newUser = new User
+            {
+                Username = username,
+                PasswordHash = passwordHash,
+                Email = email,
+                FullName = username
+            };
+
+            // Add the new user to the database
+            _context.Users.Add(newUser);
+            await _context.SaveChangesAsync();  // Save changes to the database
+
+            return newUser;
         }
     }
 }

@@ -593,3 +593,6 @@ C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\n
 C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\net6.0\ref\Euroleague.dll
 C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\obj\Debug\net6.0\Euroleague.sourcelink.json
 C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\bin\Debug\net6.0\Settings.config
+C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\admin\Downloads\euroleague-api-master\euroleague-api-master\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll

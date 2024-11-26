@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "Euroleague.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Euroleague.DTO.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Euroleague.Controllers.AuthController",
+    "Method": "SignIn",
+    "RelativePath": "api/Auth/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Euroleague.DTO.SignInRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Euroleague.Controllers.PlayerController",
     "Method": "GetPlayers",
     "RelativePath": "api/Player",
