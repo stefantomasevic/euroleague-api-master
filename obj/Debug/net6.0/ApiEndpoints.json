@@ -250,108 +250,6 @@
   },
   {
     "ContainingType": "Euroleague.Controllers.StatisticController",
-    "Method": "Post",
-    "RelativePath": "api/Statistic",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Euroleague.Controllers.StatisticController",
-    "Method": "Get",
-    "RelativePath": "api/Statistic/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Euroleague.Controllers.StatisticController",
-    "Method": "UpdateStatisticByScheduleId",
-    "RelativePath": "api/Statistic/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "scheduleId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Euroleague.Controllers.StatisticController",
-    "Method": "Delete",
-    "RelativePath": "api/Statistic/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Euroleague.Controllers.StatisticController",
     "Method": "GetStatisticsByScheduleId",
     "RelativePath": "api/Statistic/getStatisticByScheduleId/{scheduleId}",
     "HttpMethod": "GET",
@@ -365,6 +263,114 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Euroleague.Controllers.StatisticController",
+    "Method": "UpdateAsistsByScheduleId",
+    "RelativePath": "api/Statistic/updateAsists/{scheduleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scheduleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "asistDto",
+        "Type": "Euroleague.DTO.Entry.AsistsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Euroleague.Controllers.StatisticController",
+    "Method": "UpdateFoulsByScheduleId",
+    "RelativePath": "api/Statistic/updateFouls/{scheduleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scheduleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "foulsDto",
+        "Type": "Euroleague.DTO.Entry.FoulsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Euroleague.Controllers.StatisticController",
+    "Method": "UpdatePointsByScheduleId",
+    "RelativePath": "api/Statistic/updatePoints/{scheduleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scheduleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pointsDto",
+        "Type": "Euroleague.DTO.Entry.PointsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Euroleague.Controllers.StatisticController",
+    "Method": "UpdateReboundsByScheduleId",
+    "RelativePath": "api/Statistic/updateRebounds/{scheduleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scheduleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reboundsDto",
+        "Type": "Euroleague.DTO.Entry.ReboundsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Euroleague.Controllers.TeamController",

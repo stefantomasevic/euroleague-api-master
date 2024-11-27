@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Euroleague.Hubs;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,7 +45,6 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
-//app.UseCors("AllowSpecificOrigin");
 
 app.UseSwagger();
 
@@ -53,7 +53,6 @@ startup.Configure(app, builder.Environment);
 
 
 app.MapControllers();
-
 
 
 app.Run();

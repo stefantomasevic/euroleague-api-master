@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Euroleague.Data;
+using Euroleague.DTO.Entry;
 using Euroleague.Models;
 using Euroleague.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -42,29 +43,32 @@ namespace Euroleague.Controllers
             return Ok(statistics);
         }
 
-        // GET api/<StatisticController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<StatisticController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
 
         // PUT api/<StatisticController>/5
-        [HttpPut("{id}")]
-        public void UpdateStatisticByScheduleId(int scheduleId, [FromBody] string value)
+      
+        [HttpPut("updateAsists/{scheduleId}")]
+        public async Task UpdateAsistsByScheduleId(int scheduleId, [FromBody] AsistsDto asistDto)
         {
+            await _repository.UpdateAssistsAsync(scheduleId, asistDto.PlayerId, asistDto.Asists);
         }
 
-        // DELETE api/<StatisticController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpPut("updatePoints/{scheduleId}")]
+        public async Task UpdatePointsByScheduleId(int scheduleId, [FromBody] PointsDto pointsDto)
         {
+            await _repository.UpdatePointsAsync(scheduleId, pointsDto.PlayerId, pointsDto.Points);
         }
+
+        [HttpPut("updateFouls/{scheduleId}")]
+        public async Task UpdateFoulsByScheduleId(int scheduleId, [FromBody] FoulsDto foulsDto)
+        {
+            await _repository.UpdateFoulsAsync(scheduleId, foulsDto.PlayerId, foulsDto.Fouls);
+        }
+
+        [HttpPut("updateRebounds/{scheduleId}")]
+        public async Task UpdateReboundsByScheduleId(int scheduleId, [FromBody] ReboundsDto reboundsDto)
+        {
+            await _repository.UpdateReboundsAsync(scheduleId, reboundsDto.PlayerId, reboundsDto.Rebounds);
+        }
+
     }
 }
