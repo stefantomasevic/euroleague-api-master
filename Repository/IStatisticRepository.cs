@@ -5,7 +5,7 @@ namespace Euroleague.Repository
 {
     public interface IStatisticRepository
     {
-        Task UpdatePointsAsync(int scheduleId, int playerId, int points);
+        Task UpdatePointsAsync(int scheduleId, int playerId, int points, bool isHomePlayer);
 
         Task UpdateReboundsAsync(int scheduleId, int playerId, int rebounds);
 
@@ -14,5 +14,6 @@ namespace Euroleague.Repository
         Task UpdateFoulsAsync(int scheduleId, int playerId, int fouls);
 
         Task<ScheduleStatisticsDto> GetStatisticsByScheduleIdAsync(int scheduleId);
+        Task UpdateMatchAsync(int scheduleId, int points, bool isHomePlayer);
     }
 }

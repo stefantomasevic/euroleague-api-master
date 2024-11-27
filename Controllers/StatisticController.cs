@@ -55,7 +55,7 @@ namespace Euroleague.Controllers
         [HttpPut("updatePoints/{scheduleId}")]
         public async Task UpdatePointsByScheduleId(int scheduleId, [FromBody] PointsDto pointsDto)
         {
-            await _repository.UpdatePointsAsync(scheduleId, pointsDto.PlayerId, pointsDto.Points);
+            await _repository.UpdatePointsAsync(scheduleId, pointsDto.PlayerId, pointsDto.Points, pointsDto.IsHomePlayer);
         }
 
         [HttpPut("updateFouls/{scheduleId}")]
@@ -68,6 +68,12 @@ namespace Euroleague.Controllers
         public async Task UpdateReboundsByScheduleId(int scheduleId, [FromBody] ReboundsDto reboundsDto)
         {
             await _repository.UpdateReboundsAsync(scheduleId, reboundsDto.PlayerId, reboundsDto.Rebounds);
+        }
+
+        [HttpPut("updateGame/{scheduleId}")]
+        public async Task UpdateGameByScheduleId(int scheduleId, [FromBody] PointsDto reboundsDto)
+        {
+            await _repository.UpdateMatchAsync(scheduleId, reboundsDto.Points, reboundsDto.IsHomePlayer);
         }
 
     }

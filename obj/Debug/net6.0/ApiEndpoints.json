@@ -320,6 +320,33 @@
   },
   {
     "ContainingType": "Euroleague.Controllers.StatisticController",
+    "Method": "UpdateGameByScheduleId",
+    "RelativePath": "api/Statistic/updateGame/{scheduleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scheduleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reboundsDto",
+        "Type": "Euroleague.DTO.Entry.PointsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Euroleague.Controllers.StatisticController",
     "Method": "UpdatePointsByScheduleId",
     "RelativePath": "api/Statistic/updatePoints/{scheduleId}",
     "HttpMethod": "PUT",

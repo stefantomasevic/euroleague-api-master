@@ -73,7 +73,7 @@ using Microsoft.AspNetCore.SignalR;
                             .ToList()
                     };
 
-                return  statistics.FirstOrDefault();
+                return await statistics.FirstOrDefaultAsync();
             }
 
 
@@ -112,15 +112,18 @@ using Microsoft.AspNetCore.SignalR;
             }
             }
 
-            public async Task UpdatePointsAsync(int scheduleId, int playerId, int points)
+            public async Task UpdatePointsAsync(int scheduleId, int playerId, int points, bool isHomePlayer)
             {
                 var statistic = await  _context.Statistic
                     .FirstOrDefaultAsync(s => s.ScheduleId == scheduleId && s.PlayerId == playerId);
 
-                if (statistic != null)
+
+            if (statistic != null)
                 {
                     statistic.Points += points;
-                    await _context.SaveChangesAsync();
+
+                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
                 var updatedStatistics = await GetStatisticsByScheduleIdAsync(scheduleId);
 
@@ -147,7 +150,26 @@ using Microsoft.AspNetCore.SignalR;
             }
 
 
+        public async Task UpdateMatchAsync(int scheduleId, int points, bool isHomePlayer)
+        {
+            var schedule = await _context.Schedule
+                   .FirstOrDefaultAsync(s => s.Id == scheduleId);
+
+            if (schedule != null)
+            {
+                if (isHomePlayer)
+                {
+                    schedule.HomeScore += points;
+                }
+                else
+                {
+                    schedule.GuestScore += points;
+                }
+            
+                await _context.SaveChangesAsync();
+            }
         }
+    }
     }
     public class ScheduleStatisticsDto
     {

@@ -4,5 +4,6 @@
     {
         public int PlayerId { get; set; }
         public int Points { get; set; }
+        public bool IsHomePlayer { get; set; }
     }
 }
